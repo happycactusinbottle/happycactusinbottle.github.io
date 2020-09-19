@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Typora--markdown 文件编辑学习（二） | Happy_cactus_in_bottle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Typora-markdown 文件编辑学习（二）代码块通过选择菜单栏的段落选项，然后选择插入代码块，在选择语言处输入编程语言，然后在代码框中输入代码即可，例如： 12345678910111213141516171819202122class Solution:    def lengthOfLongestSubstring(self, s):        lens&#x3D;len(s)">
+  <meta name="description" content="代码块通过选择菜单栏的段落选项，然后选择插入代码块，在选择语言处输入编程语言，然后在代码框中输入代码即可，例如： 12345678910111213141516171819202122class Solution:    def lengthOfLongestSubstring(self, s):        lens&#x3D;len(s)        if lens&#x3D;&#x3D;0 :">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Typora--markdown 文件编辑学习（二）">
 <meta property="og:url" content="http://example.com/2020/09/18/Typora-markdown%20%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
 <meta property="og:site_name" content="Happy_cactus_in_bottle">
-<meta property="og:description" content="Typora-markdown 文件编辑学习（二）代码块通过选择菜单栏的段落选项，然后选择插入代码块，在选择语言处输入编程语言，然后在代码框中输入代码即可，例如： 12345678910111213141516171819202122class Solution:    def lengthOfLongestSubstring(self, s):        lens&#x3D;len(s)">
+<meta property="og:description" content="代码块通过选择菜单栏的段落选项，然后选择插入代码块，在选择语言处输入编程语言，然后在代码框中输入代码即可，例如： 12345678910111213141516171819202122class Solution:    def lengthOfLongestSubstring(self, s):        lens&#x3D;len(s)        if lens&#x3D;&#x3D;0 :">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-18T15:00:00.000Z">
-<meta property="article:modified_time" content="2020-09-19T02:41:12.571Z">
+<meta property="article:modified_time" content="2020-09-19T02:44:09.026Z">
 <meta property="article:author" content="happy_cactus">
-<meta property="article:tag" content="-typora">
+<meta property="article:tag" content="typora">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Happy_cactus_in_bottle" type="application/atom+xml">
@@ -163,7 +163,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Typora-markdown-文件编辑学习（二）"><a href="#Typora-markdown-文件编辑学习（二）" class="headerlink" title="Typora-markdown 文件编辑学习（二）"></a>Typora-markdown 文件编辑学习（二）</h1><h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>通过选择菜单栏的段落选项，然后选择插入代码块，在选择语言处输入编程语言，然后在代码框中输入代码即可，例如：</p>
+        <h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>通过选择菜单栏的段落选项，然后选择插入代码块，在选择语言处输入编程语言，然后在代码框中输入代码即可，例如：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">lengthOfLongestSubstring</span>(<span class="params">self, s</span>):</span></span><br><span class="line">        lens=len(s)</span><br><span class="line">        <span class="keyword">if</span> lens==<span class="number">0</span> :</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        com=s[<span class="number">0</span>]</span><br><span class="line">        j=<span class="number">1</span></span><br><span class="line">        l=<span class="number">1</span></span><br><span class="line">        maxlen=<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> j&lt;lens :</span><br><span class="line">            <span class="keyword">if</span> s[j] <span class="keyword">in</span> com:</span><br><span class="line">                <span class="keyword">if</span> maxlen&lt;l :</span><br><span class="line">                    maxlen=l</span><br><span class="line">                com=com[com.find(s[j])+<span class="number">1</span>:]+s[j]</span><br><span class="line">                l=len(com)</span><br><span class="line">            <span class="keyword">else</span> :</span><br><span class="line">                com+=s[j]</span><br><span class="line">                l+=<span class="number">1</span></span><br><span class="line">            j+=<span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> maxlen&lt;l:</span><br><span class="line">            maxlen=l</span><br><span class="line">        <span class="keyword">return</span> maxlen</span><br></pre></td></tr></table></figure>
 
 <p>在一行内插入代码，可以使用反引号键，即反引号键+代码+反引号键（反引号键即esc键下方相邻的键），例如：<code>print</code>,或者使用三次~键+回车，例如：</p>
@@ -212,7 +212,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-typora</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">typora</a>
         		</li>
       		
 		</ul>
@@ -311,7 +311,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Typora-markdown-%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">Typora-markdown 文件编辑学习（二）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.1.</span> <span class="toc-text">代码块</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%EF%BC%9A"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">参考文献：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%B8%80%E8%A7%88%E4%BC%97%E5%B1%B1%E5%B0%8F"><span class="toc-number">1.1.0.0.1.1.</span> <span class="toc-text">一览众山小</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.</span> <span class="toc-text">代码块</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%EF%BC%9A"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">参考文献：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%B8%80%E8%A7%88%E4%BC%97%E5%B1%B1%E5%B0%8F"><span class="toc-number">1.0.0.1.1.</span> <span class="toc-text">一览众山小</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -424,10 +424,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">typora</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">-typora</a>
               </li>
             
             <div class="clearfix"></div>
